@@ -1,0 +1,36 @@
+*
+{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-menu
+{
+    position: absolute;
+    transform: tar;
+}
+
+
+@media(max-width:576px)
+{
+    .written
+    {
+        height: 750px ;
+    }
+    .photo
+    {
+        height: 250px;
+        width: 100%;
+    }
+    .photo img
+    {
+        padding-left: 8%;
+        padding-top: 10%;
+        height: 250px;
+        width: 80%;
+    }
+    p
+    {
+        padding-left: 0%;
+    }
+}
