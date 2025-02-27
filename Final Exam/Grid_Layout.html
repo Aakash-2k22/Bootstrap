@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        .grid-item img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .grid-item {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Responsive Grid Layout</h1>
+
+        <div class="row">
+
+            <div class="col-12 col-md-5 offset-md-1 col-lg-4 offset-lg-0 grid-item">
+                <div class="card shadow-sm h-100">
+                    <img src="images/q3 marketing.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Feature One</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-4 grid-item">
+                <div class="card shadow-sm h-100">
+                    <img src="images/q3 uiux.webp" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Feature Two</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-10 offset-md-1 col-lg-4 offset-lg-0 grid-item">
+                <div class="card shadow-sm h-100">
+                    <img src="images/q3 web dev.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Feature Three</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

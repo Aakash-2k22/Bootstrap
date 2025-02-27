@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <style>
+        .blog-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .grid-item img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .grid-item {
+            margin-bottom: 30px;
+        }
+        .accordion-button {
+            background-color: #f8f9fa;
+        }
+
+        .accordion-body {
+            background-color: white;
+        }
+        .registration-container {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .registration-image {
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+     
+</head>
+<body>
+    
+    <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Header</a>
+
+            <!-- Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Offcanvas Component -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Blog Posts</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Blog Post 1 -->
+                <div class="col">
+                    <section class="card blog-card h-100">
+                        <img src="images/q3 web dev.jpg" class="card-img-top" alt="Blog Post 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Future of Web Development</h3>
+                            <p class="card-text">Explore the latest trends in web development and discover what the
+                                future holds for frontend technologies.</p>
+                            <a href="#" class="btn btn-link text-decoration-none">Read More </a>
+                        </div>
+                        
+                    </section>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col">
+                    <section class="card blog-card h-100">
+                        <img src="images/q3 uiux.webp" class="card-img-top" alt="Blog Post 2">
+                        <div class="card-body">
+                            <h3 class="card-title">UI/UX Best Practices</h3>
+                            <p class="card-text">Learn essential UI/UX design principles that will help you create
+                                better user experiences.</p>
+                            <a href="#" class="btn btn-link text-decoration-none">Read More </a>
+                        </div>
+                        
+                    </section>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col">
+                    <section class="card blog-card h-100">
+                        <img src="images/q3 marketing.jpg" class="card-img-top" alt="Blog Post 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Digital Marketing Trends</h3>
+                            <p class="card-text">Discover the most effective digital marketing strategies for 2024 and
+                                beyond.</p>
+                            <a href="#" class="btn btn-link text-decoration-none">Read More </a>
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Responsive Grid Layout</h1>
+
+        <div class="row">
+
+            <div class="col-12 col-md-5 offset-md-1 col-lg-4 offset-lg-0 grid-item">
+                <div class="card shadow-sm h-100">
+                    <img src="images/q3 marketing.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Feature One</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-4 grid-item">
+                <div class="card shadow-sm h-100">
+                    <img src="images/q3 uiux.webp" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Feature Two</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-10 offset-md-1 col-lg-4 offset-lg-0 grid-item">
+                <div class="card shadow-sm h-100">
+                    <img src="images/q3 web dev.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Feature Three</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fs-1 fw-bold">Frequently Asked Questions</h2>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            How do I create an account?
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body fs-6">
+                            <p class="lh-base">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga fugiat cum a veniam
+                                numquam magni vel aut qui illo ut unde neque totam sunt, dolore animi ea voluptas.
+                                Rerum, repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-semibold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            What payment methods do you accept?
+                        </button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body fs-6">
+                            <p class="lh-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti dolore
+                                nulla nesciunt illo! Necessitatibus optio quaerat nulla commodi cupiditate laboriosam
+                                error rem temporibus ullam eaque, dolorem numquam eius esse?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-semibold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            Can I cancel my subscription anytime?
+                        </button>
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body fs-6">
+                            <p class="lh-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquam ullam!
+                                Voluptatem sunt eaque libero earum aliquam, ex molestiae odio sit aut obcaecati.
+                                Voluptatibus, repudiandae facilis? Rerum possimus libero voluptatum?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration-container">
+        <div class="container h-100 py-5">
+            <div class="row align-items-center">
+
+
+                <!-- Registration Form -->
+                <div class="col-md-6">
+                    <div class="card shadow-lg p-4">
+                        <h2 class="text-center mb-4">Create Account</h2>
+
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        Create Account
+                                    </button>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <p class="mt-3">Already have an account?
+                                        <a href="#" class="text-decoration-none">Login here</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
