@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-nav {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-img {
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+
+        .img-1 {
+            width: 300px;
+            height: 250px;
+        }
+
+        .img-2 {
+            width: 350px;
+            height: 200px;
+        }
+
+        .img-3 {
+            width: 280px;
+            height: 300px;
+        }
+
+        .img-4 {
+            width: 400px;
+            height: 250px;
+        }
+
+        .img-5 {
+            width: 320px;
+            height: 420px;
+        }
+
+        .img-6 {
+            width: 380px;
+            height: 280px;
+        }
+
+        .img-7 {
+            width: 300px;
+            height: 400px;
+        }
+
+        .img-8 {
+            width: 450px;
+            height: 220px;
+        }
+
+        .tab-content {
+            padding: 20px 0;
+        }
+
+        .nav-pills .nav-link {
+            color: #333;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .nav-pills .nav-link.active {
+            background: #6c5ce7;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Centered Navigation -->
+    <nav class="gallery-nav py-3 fixed-top">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">All</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#app">App</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#card">Card</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#web">Web</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid mt-5 pt-5">
+        <div class="tab-content">
+            <!-- All Tab -->
+            <div class="tab-pane fade show active" id="all">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="assets/1.jpg" class="gallery-img img-1">
+                    <img src="assets/2.jpg" class="gallery-img img-2">
+                    <img src="assets/3.jpg" class="gallery-img img-3">
+                    <img src="assets/4.jpg" class="gallery-img img-4">
+                    <img src="assets/5.jpg" class="gallery-img img-5">
+                    <img src="assets/6.jpg" class="gallery-img img-6">
+                    <img src="assets/7.jpg" class="gallery-img img-7">
+                    <img src="assets/8.jpg" class="gallery-img img-8">
+                </div>
+            </div>
+
+            <!-- App Tab -->
+            <div class="tab-pane fade" id="app">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="assets/1.jpg" class="gallery-img img-1">
+                    <img src="assets/4.jpg" class="gallery-img img-4">
+                    <img src="assets/7.jpg" class="gallery-img img-7">
+                </div>
+            </div>
+
+            <!-- Card Tab -->
+            <div class="tab-pane fade" id="card">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="assets/2.jpg" class="gallery-img img-2">
+                    <img src="assets/5.jpg" class="gallery-img img-5">
+                    <img src="assets/8.jpg" class="gallery-img img-8">
+                </div>
+            </div>
+
+            <!-- Web Tab -->
+            <div class="tab-pane fade" id="web">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="assets/3.jpg" class="gallery-img img-3">
+                    <img src="assets/6.jpg" class="gallery-img img-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
